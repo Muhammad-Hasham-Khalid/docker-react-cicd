@@ -10,6 +10,7 @@ script:
   - docker run -e CI=true hashiinngg/docker-react npm run test -- --coverage
 
 deploy:
+  app: "docker-react"
   provider: elasticbeanstalk
   region: "us-east-1"
   name: "docker-react"
